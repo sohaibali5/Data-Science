@@ -1,0 +1,86 @@
+Numpy
+-Efficient interface to store and manipulate data 
+-Core of almost all the data science tools in python ( which includes keras to tensorflow)
+-Used to create and manipulates arrays 
+-Numpy provides us those tools which can help us to store data in that particular format 
+ so we can process it before feeding it into the machine learning algorithm
+
+
+numpy arrays are fixed type. More efficient and less flexible as comapred to list 
+
+
+array created using numpy will convert all of its elements in single data type precedence string>float>int
+ 
+run one by one(line change means new code) in jupyter 
+
+import numpy as np
+
+arr=np.array([2,4,6.3,78,1])
+arr
+
+print(arr)
+
+
+arr2=np.arange(6)
+print(arr2)
+
+arr3=np.linspace(0,4,3)
+print(arr3)
+
+np.arange(1,31,5)
+
+np.ones((3,3))
+
+np.full((3,3),4)
+
+np.random.randint(1,10,(3,3))# randint generates positive random values #1 se 10 ke darmiyaan ki 3x3 ka matrix banayega
+
+np.eye(3)
+
+np.random.randint(5,size=6)
+
+np.random.randint(5,size=(6,2))
+
+np.random.randint(5,size=(4,2,3)) #four matrix hon 2 by 3 kay
+
+np.random.randn(3,4)#matrix(array) ordered will be given and it will generate numbers b/w 0 and 1  
+
+dimension=np.random.random((2,4)) #order of matrix is given and it will generate random numbers b/w 0 and 1
+dimension
+
+dimension.shape#tells us order of array matrix
+
+dimension.ndim tells us dimension 2d array or 3d 
+
+data=np.random.random(40)  
+data.mean()#calculate the mean(avg) between all elements of array
+
+data=np.random.random(40)  
+data.std()#calculate the standard deviation(difference between mean and all elements of data) between all elements of array
+
+data.sum()
+
+data.min()
+
+data.max()
+
+data*2#multiplying all elements of array by 2 
+
+data-data
+
+arr1>=arr2#you can directly compare elements of list 
+
+---------------Sorting
+
+dimension=np.random.randint(1,10,(2,6))
+dimension
+
+np.sort(dimension)#default it is sorted in a row vice 
+
+np.sort(dimension,axis=0)#coloumn vice if axis val is 1 then row vice
+
+
+
+
+
+
